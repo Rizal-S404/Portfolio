@@ -3,7 +3,11 @@ module.exports = {
   content: ["./public/index.html"],
 
   theme: {
-    extend: {},
+    extend: {
+      letterSpacing: {
+        ngangkang: ".5em"
+      }
+    },
   },
   plugins: [],
 };

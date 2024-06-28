@@ -6,45 +6,69 @@
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-800 text-gray-500">
+  <body class="text-gray-500 bg-gray-800">
     <!-- Header -->
-    <header class="sticky bg-gray-950 py-5">
-      <nav class="w-9/12 flex flex-row mx-auto">
-        <div class="uppercase text-lg basis-1/4">
+    <header class="sticky z-10 py-5 bg-gray-950">
+      <nav class="flex flex-row w-9/12 mx-auto">
+        <div class="text-lg uppercase basis-1/4">
           <!-- Logo -->
           <a href="">
-            <span class="font-extrabold text-gray">Aprizal</span>
+            <span class="font-extrabold text-white">Aprizal</span>
           </a>
         </div>
-        <div class="basis-1/2 flex items-center justify-evenly">
+        <div class="flex items-center basis-1/2 justify-evenly">
           <!-- Link -->
           <a href=""><span>About</span></a>
           <a href=""> <span>Forpolios</span></a>
           <a href=""><span>Experiences</span></a>
           <a href=""><span>Contact</span></a>
         </div>
-        <div class="basis-1/4 flex justify-end">
+        <div class="flex justify-end basis-1/4">
           <!-- Dark Mode -->
-           <li>
+           <!-- <li>
           <div class="flex">
             <span class="mr-2 text-sm text-slate-500">light</span>
             <input type="checkbox" class="hidden" id="dark-toggle" />
             <label for="dark-toggle">
-              <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+              <div class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-500">
+                <div class="w-4 h-4 transition duration-300 ease-in-out bg-white rounded-full toggle-circle"></div>
               </div>
             </label>
             <span class="ml-2 text-sm text-slate-500">dark</span>
           </div>
-        </li>
+        </li> -->
       </nav>
     </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <div> <!-- Hero Section -->
-            <div>
+        <div class="relative bg-gray-950 -top-20"> <!-- Hero Section -->
+            <div class="flex items-center w-9/12 h-screen mx-auto ">
+                <div class="basis-1/2"> <!--Deskripsi-->
+                  <div class="flex items-center">
+                  <svg class="w-5 h-5 stroke-2 stroke-gray-400">
+                    <line x1="0" y1="10px" x2="10px" y2="10px"/>
+                  </svg>
+                  <h2 class="text-xs uppercase font-extralight tracking-ngangkang">
+                    my name is</h2>
+                </div>
+                  <h3 class="text-4xl font-bold text-white">
+                    <span>APRIZAL</span>
+                  </h3>
+                  <P class="font-light">
+                    Saya mahasiswa aktif S1 Teknik informatika yang sedang meniti karir di bidang IT, 
+                    saya sedikit menguasai berbagai teknologi dan keterampilan yang diperlukan untuk
+                    mengembangkan aplikasi web secara end-to-end.Dan memiliki pemahaman mendalam 
+                    tentang Front-End dan Back-End development.
+                  </P>
+                  <div class="flex flex-row mt-5 space-x-3"> <!--Avatar-->
+                    <img class="w-6 h-6" src="img/Github.svg" alt="">
+                    <img class="w-6 h-6" src="img/Instagram.svg" alt="">
+                    <img class="w-6 h-6" src="img/Linkedin.svg" alt="">
+                  </div>
+                </div>
+                   <div class="mx-auto"> <img src="img/haloo.png" alt=""></div> 
                 <div>
 
                 </div>
