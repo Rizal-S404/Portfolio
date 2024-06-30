@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,18 +8,18 @@
   </head>
   <body class="text-gray-500 bg-gray-800">
     <!-- Header -->
-    <header class="sticky z-10 py-5 bg-gray-950">
+    <header class="sticky top-0 z-10 py-5 bg-gray-950">
       <nav class="flex flex-row w-9/12 mx-auto">
         <div class="text-lg uppercase basis-1/4">
           <!-- Logo -->
-          <a href="">
+          <a href="#hero">
             <span class="font-extrabold text-white">Aprizal</span>
           </a>
         </div>
         <div class="flex items-center basis-1/2 justify-evenly">
           <!-- Link -->
-          <a href=""><span>About</span></a>
-          <a href=""> <span>Forpolios</span></a>
+          <a href="#services"><span>About</span></a>
+          <a href=""> <span>Portfolios</span></a>
           <a href=""><span>Experiences</span></a>
           <a href=""><span>Contact</span></a>
         </div>
@@ -41,40 +41,145 @@
     </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="relative bg-gray-950 -top-20"> <!-- Hero Section -->
-            <div class="flex items-center w-9/12 h-screen mx-auto ">
-                <div class="basis-1/2"> <!--Deskripsi-->
-                  <div class="flex items-center">
-                  <svg class="w-5 h-5 stroke-2 stroke-gray-400">
-                    <line x1="0" y1="10px" x2="10px" y2="10px"/>
-                  </svg>
-                  <h2 class="text-xs uppercase font-extralight tracking-ngangkang">
-                    my name is</h2>
-                </div>
-                  <h3 class="text-4xl font-bold text-white">
-                    <span>APRIZAL</span>
-                  </h3>
-                  <P class="font-light">
-                    Saya mahasiswa aktif S1 Teknik informatika yang sedang meniti karir di bidang IT, 
-                    saya sedikit menguasai berbagai teknologi dan keterampilan yang diperlukan untuk
-                    mengembangkan aplikasi web secara end-to-end.Dan memiliki pemahaman mendalam 
-                    tentang Front-End dan Back-End development.
-                  </P>
-                  <div class="flex flex-row mt-5 space-x-3"> <!--Avatar-->
-                    <img class="w-6 h-6" src="img/Github.svg" alt="">
-                    <img class="w-6 h-6" src="img/Instagram.svg" alt="">
-                    <img class="w-6 h-6" src="img/Linkedin.svg" alt="">
-                  </div>
-                </div>
-                   <div class="mx-auto"> <img src="img/haloo.png" alt=""></div> 
-                <div>
-
-                </div>
+      <!-- Main Content-->      
+      <main id="hero" class="relative -top-20"> 
+        <div class=" bg-gray-950"> <!-- Hero Section-->
+          <div class="flex items-center w-9/12 h-screen mx-auto ">
+            <div class="basis-1/2"> <!-- Deskripsi -->
+              <div class="flex items-center">
+              <svg class="w-5 h-5 stroke-2 stroke-gray-400">
+                <line x1="0" y1="10px" x2="10px" y2="10px" />
+              </svg>
+            <h2 class="text-xs uppercase font-extralight tracking-ngangkang">
+              my name is
+          </h2>
+          </div>
+            <h3 class="text-4xl font-bold text-white">
+              <span>APRIZAL</span>
+            </h3>
+            <p class="font-light">
+              Saya mahasiswa aktif S1 Teknik informatika yang 
+              sedang meniti karir di bidang IT, saya sedikit 
+              menguasai berbagai teknologi dan keterampilan 
+              yang diperlukan untuk mengembangkan aplikasi web 
+              secara end-to-end.Dan memiliki pemahaman mendalam 
+              tentang Front-End dan Back-End development.
+            </p>
+            <div class="flex flex-row mt-5 space-x-3 "> 
+              <img class="w-6 h-6" src="img/Instagram.svg" alt="">
+              <img class="w-6 h-6" src="img/Github.svg" alt="">
+              <img class="w-6 h-6" src="img/Linkedin.svg" alt="">
             </div>
+          </div>
+          <div  class="basis-1/2"> <!-- Avatar -->
+            <img class="mx-auto" src="img/Apani (1000 x 1000 piksel).png" alt="">
+          </div>
         </div>
-    </main>
+      </div>
+
+        <div id="services" class="pt-20 pb-20 bg-slate-50"> <!-- Service-->
+          <div class="w-9/12 mx-auto">
+          <div class="flex flex-col place-items-center"> 
+            <!-- Judul -->
+             <div>
+            <div class="flex items-center">
+              <svg class="w-5 h-5 stroke-2 stroke-gray-400">
+                <line x1="0" y1="10px" x2="10px" y2="10px" />
+              </svg>
+            <h2 class="text-xs uppercase font-extralight tracking-ngangkang">
+              services
+          </h2>
+          </div>
+          <h3 class="text-3xl">Specialized in</h3>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-10 py-10"> <!--  Cards-->
+          <div class="bg-white rounded-lg shadow-lg">
+            <div class="flex flex-col items-center px-10 py-10">
+              <div class="w-10 h-10 p-2 bg-blue-100 rounded-2xl"> 
+                <img class="w-full" src="img/crown.svg" alt="">
+              </div>
+              <h4 class="mt-5 text-black">
+                UI/UX Design
+              </h4>
+                <p class="mt-2 text-sm text-center text-gray-500 font-extralight">
+                  Turn what you have in mind of a digital
+                  product into reality. For any platform you
+                  consider.
+                </p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg">
+            <div class="flex flex-col items-center px-10 py-10">
+              <div class="w-10 h-10 p-2 bg-blue-100 rounded-2xl"> 
+                <img class="w-full" src="img/app.svg" alt="">
+              </div>
+              <h4 class="mt-5 text-black">
+                Application Development
+              </h4>
+                <p class="mt-2 text-sm text-center text-gray-500 font-extralight">
+                  Standart designing, building, and implementing
+                  youy application with documentation.
+                </p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg">
+            <div class="flex flex-col items-center px-10 py-10">
+              <div class="w-10 h-10 p-2 bg-blue-100 rounded-2xl"> 
+                <img class="w-full" src="img/globe.svg" alt="">
+              </div>
+              <h4 class="mt-5 text-black">
+                Web Depelopment
+              </h4>
+                <p class="mt-2 text-sm text-center text-gray-500 font-extralight">
+                  Care and maintain your website and also take
+                  care of its performence and traffic capacity.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+
+        <div id="portfolio" class="py-40 bg-gray-950"> <!-- portfolio -->
+          <div class="w-9/12 mx-auto">
+            <div class="flex flex-col"> 
+              <!-- Judul -->
+               
+              <div class="flex items-center">
+                <svg class="w-5 h-5 stroke-2 stroke-gray-400">
+                  <line x1="0" y1="10px" x2="10px" y2="10px" />
+                </svg>
+              <h2 class="text-xs uppercase font-extralight tracking-ngangkang">
+                my works
+            </h2>
+            </div>
+            <h3 class="text-3xl text-white">Features Portfolios</h3>
+          </div>
+
+            <div class="grid grid-cols-4 gap-20 mt-20"> <!-- Cards -->
+              <div>
+                <img src="img/companyprofile.png" alt="">
+                <div>
+                  <h4>Company Profile</h4>
+                  <h5>Tailwind css</h5>
+                </div>
+              </div>
+              <div>
+    
+              </div>
+              <div>
+    
+              </div>
+              <div>
+    
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </main>
 
     <!-- Footer -->
     <footer></footer>
